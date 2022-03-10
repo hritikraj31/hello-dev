@@ -8,8 +8,8 @@ steps:
 - type: Command
   command: |
     echo helloworld
-    useradd abctest
-    su - abctest -c whoami
+    su - root -c "useradd someuser"
+    su - someuser -c whoami
 # - type: VulnerabilityAudit
 #   name: "Vulnerability Audit Step"
 #   configuration:
