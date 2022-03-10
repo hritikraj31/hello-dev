@@ -5,6 +5,11 @@ runAs: root
 shell: bash
 
 steps:
+- type: Command
+  command: |
+    echo helloworld
+    useradd abctest
+    su - abctest -c whoami
 - type: VulnerabilityAudit
   name: "Vulnerability Audit Step"
   configuration:
