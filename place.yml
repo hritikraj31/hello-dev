@@ -6,9 +6,10 @@ shell: bash
 
 steps:
 - type: Command
+  timeoutInSeconds: 3
   command: |
     echo helloworld
-    ech
+    sleep 5000
 # - type: VulnerabilityAudit
 #   name: "Vulnerability Audit Step"
 #   configuration:
