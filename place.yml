@@ -8,7 +8,6 @@ steps:
 - type: Command
   command: |
     echo helloworld
-    ech
 # - type: VulnerabilityAudit
 #   name: "Vulnerability Audit Step"
 #   configuration:
