@@ -9,7 +9,6 @@ steps:
   timeoutInSeconds: 3
   command: |
     echo helloworld
-    sleep 5000
 - type: VulnerabilityAudit
   name: "Vulnerability Audit Step"
   configuration:
