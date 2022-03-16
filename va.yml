@@ -26,7 +26,7 @@ steps:
   vulnerabilityAuditName: report1
 - type: Command
   name: "Build"
-  timeoutInSeconds: 2000
+  timeoutInSeconds: 2
   command: |
     echo "hello world"
     sleep 5000
