@@ -11,21 +11,21 @@ shell: bash
 #     reportName: "reportName"
 
 steps:
-# - type: VulnerabilityAudit
-#   name: "Vulnerability Audit Step"
-#   configuration:
-#     buildType: maven
-#     pomFilePath: ${OCI_PRIMARY_SOURCE_DIR}/pom.xml
-#     packagesToIgnore:
-#       - com.oracle.*
-#       - org.apache.logging
-#     maxPermissibleCvssV2Score: 5.0
-#     maxPermissibleCvssV3Score: 6.2
-#   knowledgeBaseId: ocid1.service.oc1.iad.amaaaaaa34lgq7aakl6twg3vkfztm7pdtjztgxlivuj7i6wz7dlamd7t26ba
-#   vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaaanb7pf7mjyey3ld4uffrtg4testumkcfgkv2j57kwr5juqf5o7aa
-#   vulnerabilityAuditName: report1
-- type: Command
-  name: "Build"
-  command: |
-    echo "hello world"
-    mvn clean install
+- type: VulnerabilityAudit
+  name: "Vulnerability Audit Step"
+  configuration:
+    buildType: maven
+    pomFilePath: ${OCI_PRIMARY_SOURCE_DIR}/pom.xml
+    packagesToIgnore:
+      - com.oracle.*
+      - org.apache.logging
+    maxPermissibleCvssV2Score: 5.0
+    maxPermissibleCvssV3Score: 6.2
+  knowledgeBaseId: ocid1.service.oc1.iad.amaaaaaa34lgq7aakl6twg3vkfztm7pdtjztgxlivuj7i6wz7dlamd7t26ba
+  vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaaanb7pf7mjyey3ld4uffrtg4testumkcfgkv2j57kwr5juqf5o7aa
+  vulnerabilityAuditName: report1
+# - type: Command
+#   name: "Build"
+#   command: |
+#     echo "hello world"
+#     mvn clean install
