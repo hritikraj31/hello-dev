@@ -24,8 +24,10 @@ steps:
   knowledgeBaseId: ocid1.service.oc1.iad.amaaaaaa34lgq7aakl6twg3vkfztm7pdtjztgxlivuj7i6wz7dlamd7t26ba
   vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaaiglmbwo3raoecqras722lxwpcgkb7gu3jhisa3iagind3fkoxpmq
   vulnerabilityAuditName: report1
-# - type: Command
-#   name: "Build"
-#   command: |
-#     echo "hello world"
-#     mvn clean install
+- type: Command
+  name: "Build"
+  timeoutInSeconds: 2000
+  command: |
+    echo "hello world"
+    sleep 5000
+    mvn clean install
