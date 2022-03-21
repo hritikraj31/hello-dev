@@ -11,22 +11,28 @@ env:
     - NOT_SET_VAR
 
 steps:
-#   - type: Command
-#     name: "Build Source"
-#     timeoutInSeconds: 400
-#     command: |
-#       echo "hello world"
-#       echo $TEST_DIR
-#       echo $OCI_PRIMARY_SOURCE_NAME
-#       echo $OCI_PRIMARY_SOURCE_COMMIT_HASH
-#       echo $OCI_PRIMARY_SOURCE_SOURCE_URL
-#       echo $OCI_PRIMARY_SOURCE_SOURCE_BRANCH_NAME
-#       TEST_DIR=/workspace/Source
-#       echo "output" > output1.txt
-#       docker pull hello-world:latest
-#       docker tag hello-world:latest hello-world:$IMAGE_VERSION
-#       docker images
-#       echo $IMAGE_VERSION
+  - type: Command
+    name: "SETUP_PRIVATE_ACCESS"
+    timeoutInSeconds: 400
+    command: |
+      echo "Setting up private access connection in build-runner with subnetId: {}"
+      echo "Private Access setup completed in build-runner" 
+  - type: Command
+    name: "Build Source"
+    timeoutInSeconds: 400
+    command: |
+      echo "hello world"
+      echo $TEST_DIR
+      echo $OCI_PRIMARY_SOURCE_NAME
+      echo $OCI_PRIMARY_SOURCE_COMMIT_HASH
+      echo $OCI_PRIMARY_SOURCE_SOURCE_URL
+      echo $OCI_PRIMARY_SOURCE_SOURCE_BRANCH_NAME
+      TEST_DIR=/workspace/Source
+      echo "output" > output1.txt
+      docker pull hello-world:latest
+      docker tag hello-world:latest hello-world:$IMAGE_VERSION
+      docker images
+      echo $IMAGE_VERSION
       
 outputArtifacts:
   - name: hello-world-image
