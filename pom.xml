@@ -16,7 +16,7 @@
      <gauva.version>30.1-jre</gauva.version>
   </properties>
     <dependencies>
-<!--     <dependency>
+    <dependency>
       <groupId>info.picocli</groupId>
       <artifactId>picocli</artifactId>
       <version>${picocli.version}</version>
@@ -26,7 +26,7 @@
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>${gauva.version}</version>
-    </dependency> -->
+    </dependency>
      <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
