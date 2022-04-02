@@ -28,7 +28,7 @@
       <version>${gauva.version}</version>
     </dependency>
      <dependency>
-      <groupId>log4j</groupId>
+      <groupId>log4jxyzuvbac</groupId>
       <artifactId>log4j</artifactId>
       <version>1.2.16</version>
    </dependency>
