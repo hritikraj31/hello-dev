@@ -17,7 +17,7 @@ steps:
   name: "Vulnerability Audit Step"
   configuration:
     buildType: maven
-    pomFilePath: ${abc}/pom.xml
+    pomFilePath: ${OCI_PRIMARY_SOURCE_DIR}/pom.xml
     packagesToIgnore:
       - com.oracle.*
       - org.apache.logging
