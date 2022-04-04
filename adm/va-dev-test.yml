@@ -16,13 +16,13 @@ steps:
   name: "Vulnerability Audit Step"
   configuration:
     buildType: maven
-    pomFilePath: ${OCI_PRIMARY_SOURCE_DIR}/pom.xml
+    pomFilePath: ${abc}/pom.xml
     packagesToIgnore:
       - com.oracle.*
       - org.apache.logging
     maxPermissibleCvssV2Score: 10.0
     maxPermissibleCvssV3Score: 10.0
-  knowledgeBaseId: ${kbId}
+  knowledgeBaseId: ocid1.service.oc1.iad.amaaaaaab6fywtyalobukpan7s655fllbnh2ovdudmujhoil6zrytrkkcyaq
   vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaaanb7pf7mjyey3ld4uffrtg4testumkcfgkv2j57kwr5juqf5o7aa
   vulnerabilityAuditName: report1
 - type: Command
