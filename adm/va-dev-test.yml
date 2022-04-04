@@ -29,5 +29,5 @@ steps:
   command: |
     echo "hello world"
     # mvn clean install
-    ls -lart /root/.m2
+    ls -lart /root/.m2/repository
     cat pom.xml
