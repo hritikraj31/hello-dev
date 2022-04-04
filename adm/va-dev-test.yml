@@ -4,12 +4,13 @@ timeoutInSeconds: 6000
 runAs: root
 shell: bash
 
-# env:
-#   variables:
-#     pomFileLocation: /workspace/Source/pom.xml
-#     compId: ocid1.compartment.oc1..aaaaaaaaiglmbwo3raoecqras722lxwpcgkb7gu3jhisa3iagind3fkoxpmq
-#     reportName: "reportName"
-#     kbId: ocid1.service.oc1.iad.amaaaaaab6fywtyalobukpan7s655fllbnh2ovdudmujhoil6zrytrkkcyaq
+env:
+  variables:
+    pomFileLocation: /workspace/Source/pom.xml
+    compId: ocid1.compartment.oc1..aaaaaaaaiglmbwo3raoecqras722lxwpcgkb7gu3jhisa3iagind3fkoxpmq
+    reportName: "reportName"
+    kbId: ocid1.service.oc1.iad.amaaaaaab6fywtyalobukpan7s655fllbnh2ovdudmujhoil6zrytrkkcyaq
+    abc: /workspace/Source
 
 steps:
 - type: VulnerabilityAudit
