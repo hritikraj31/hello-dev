@@ -11,8 +11,8 @@ env:
     reportName: "reportName"
     kbId: ocid1.service.oc1.iad.amaaaaaab6fywtyalobukpan7s655fllbnh2ovdudmujhoil6zrytrkkcyaq
     abc: /workspace/Source
-  exportedVariables:
-    - version
+#   exportedVariables:
+#     - version
 
 steps:
 - type: VulnerabilityAudit
