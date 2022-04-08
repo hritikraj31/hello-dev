@@ -46,7 +46,7 @@ env:
   variables:
     abc: pom.xml
   exportedVariables:
-    - name
+    - abc
     - version
 steps:
   - type: VulnerabilityAudit        # required
