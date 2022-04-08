@@ -46,6 +46,7 @@ env:
   variables:
     abc: pom.xml
     wpath: workspace
+    sourceName: Source
   exportedVariables:
     - version
 steps:
@@ -53,7 +54,7 @@ steps:
     name: "Vulnerability Audit Step" # optional
     configuration:                   # required
       buildType: maven               # required
-      pomFilePath: /${wpath}/${abc} # required (Supports parameter substitution)
+      pomFilePath: /${wpath}/${sourceName}/${abc} # required (Supports parameter substitution)
       packagesToIgnore:
         - com.*
       maxPermissibleCvssV2Score: 10.0                # optional (defaults to 0.0)
