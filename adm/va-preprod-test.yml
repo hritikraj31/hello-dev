@@ -26,7 +26,7 @@ steps:
     maxPermissibleCvssV2Score: 10.0
     maxPermissibleCvssV3Score: 10.0
   knowledgeBaseId: ocid1.admknowledgebase.oc1.iad.amaaaaaa4725fbqawhps377rxplobl7yc3kbpdrtdanlpo44ldob5722hjza
-  vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaamimegz6vbad3of5blhrgezxn35d5hrkqyd65ucz47pizitb4elja
+  vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaavqbsch2xelb4tmfpjasoyvcmncn2ofii6ftmx6fkxibmqwgvs7ua
 #   vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaaiglmbwo3raoecqras722lxwpcgkb7gu3jhisa3iagind3fkoxpmq
   vulnerabilityAuditName: report1
 # - type: Command
