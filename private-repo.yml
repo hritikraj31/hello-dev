@@ -20,5 +20,5 @@ steps:
     command: |
       echo $testEnv
       echo "cloning private repo"
-      GIT_SSL_NO_VERIFY=true
+      export GIT_SSL_NO_VERIFY=true
       git clone https://GITLAB_TOKEN:E81iqmLf1EjJrd7KY_u6@10.0.0.248:8081/user1/hello-world.git
