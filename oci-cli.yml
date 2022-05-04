@@ -20,6 +20,7 @@ steps:
       echo "Have access"
       PATH=$PATH:/test
       echo $PATH
+      abc
       oci artifacts generic artifact get --artifact-id ocid1.genericartifact.oc1.iad.0.amaaaaaa34lgq7aakerwvqyv3vifcjk4uw7f4vlt7mdff4ugdhjjhobiruja
       
       
