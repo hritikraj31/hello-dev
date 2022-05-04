@@ -16,6 +16,7 @@ steps:
   - type: Command
     name: "Test oci cli with access"
     timeoutInSeconds: 400
+    failOnStdErr: true
     command: |
       echo "Have access"
       PATH=$PATH:/test
