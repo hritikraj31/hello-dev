@@ -25,7 +25,7 @@ steps:
       - org.apache.logging
     maxPermissibleCvssV2Score: 10.0
     maxPermissibleCvssV3Score: 10.0
-  knowledgeBaseId: ocid1.service.oc1.iad.amaaaaaab6fywtyalobukpan7s655fllbnh2ovdudmujhoil6zrytrkkcyaq
+  knowledgeBaseId: ocid1.admknowledgebase.oc1.iad.amaaaaaa34lgq7aagdvrzm3kcemby3ya3kdtqehspe4dzcmppib4pta3ef6q
   vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaaanb7pf7mjyey3ld4uffrtg4testumkcfgkv2j57kwr5juqf5o7aa
 #   vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaaiglmbwo3raoecqras722lxwpcgkb7gu3jhisa3iagind3fkoxpmq
   vulnerabilityAuditName: report1
@@ -39,7 +39,7 @@ steps:
       - org.apache.logging
     maxPermissibleCvssV2Score: 10.0
     maxPermissibleCvssV3Score: 10.0
-  knowledgeBaseId: ocid1.service.oc1.iad.amaaaaaab6fywtyalobukpan7s655fllbnh2ovdudmujhoil6zrytrkkcyaq
+  knowledgeBaseId: ocid1.admknowledgebase.oc1.iad.amaaaaaa34lgq7aagdvrzm3kcemby3ya3kdtqehspe4dzcmppib4pta3ef6q
   vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaaanb7pf7mjyey3ld4uffrtg4testumkcfgkv2j57kwr5juqf5o7aa
 #   vulnerabilityAuditCompartmentId: ocid1.compartment.oc1..aaaaaaaaiglmbwo3raoecqras722lxwpcgkb7gu3jhisa3iagind3fkoxpmq
   vulnerabilityAuditName: report2
