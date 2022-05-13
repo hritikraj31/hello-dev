@@ -22,4 +22,5 @@ steps:
       echo "cloning private repo"
       export GIT_SSL_NO_VERIFY=true
       git clone https://GITLAB_TOKEN:E81iqmLf1EjJrd7KY_u6@10.0.0.248:8081/user1/hello-world.git
+      cd hello-world
       testEnv=`ls -lart`
