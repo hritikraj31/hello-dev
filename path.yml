@@ -12,7 +12,7 @@ steps:
     name: "Install GraalVM Enterprise 22.1 Java 17 - JDK and Native Image"
     command: |
       echo $PATH
-      PATH=PATH=/abc/bcd:$PATH
+      PATH=/abc/bcd:$PATH
   - type: Command
     name: "Set the JAVA_HOME and PATH"
     command: |
