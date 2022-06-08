@@ -3,14 +3,19 @@ component: build
 timeoutInSeconds: 6000
 
 env:
+  vaultVariables:
+    dockerPassword: ocid1.vaultsecret.oc1.iad.amaaaaaam4dsnniadsmgmf22acw4kbbanj3ofjaev55ze5sm6gxoqhxeihia
   exportedVariables:
     - tagValue
 
 
 steps:
   - type: Command
-    name: "Clone private repo"
+    name: "Build and push Docker image"
     timeoutInSeconds: 400
     command: |
       tagValue=`git tag --points-at HEAD`
-      echo $tagValue
+      echo Tagging Docker image with $tagValue
+      docker login iad.ocir.io -u axsewmzamo2h/ui_team_testing -p $dockerPassword
+      docker build -t iad.ocir.io/axsewmzamo2h/test:$tagValue .
+      docker push iad.ocir.io/axsewmzamo2h/test:$tagValue
