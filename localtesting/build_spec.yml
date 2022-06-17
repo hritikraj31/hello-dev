@@ -23,7 +23,8 @@ steps:
     timeoutInSeconds: 4000
 #     shell: /bin/sh
     command: |
-      echo "Hritik Raj"
+      echo "Hritik Raj Harsh Singh"
+      echo "Testing"
       echo $PATH
       PATH=$PATH:/test
       echo "-----------------------"
@@ -89,7 +90,7 @@ steps:
     name: "Install curl"
     timeoutInSeconds: 4000
     command: |
-      yum install --enablerepo=ol7_latest,ol7_uekr6 -y java-11-openjdk-devel
+      yum install -y java-11-openjdk-devel
       JAVA_11=$(alternatives --display java | grep 'family java-11-openjdk' | cut -d' ' -f1)
       alternatives --set java $JAVA_11
       docker save iad.ocir.io/id204we8d65n/balaregistry/hello-bala:1.0 -o docker-image.tar
